@@ -1,0 +1,78 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.coverage
+
+# Environment files
+.env
+.env.local
+*.env
+
+# Database
+*.db
+*.sqlite3
+
+# Data files
+data/uploads/*
+data/results/*
+!data/uploads/.gitkeep
+!data/results/.gitkeep
+test_data.csv
+backend/test_data.csv
+
+# Logs
+*.log
+
+# IDE
+.DS_Store
+.idea/
+.vscode/
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+
+# Docker compose (has AWS endpoints)
+docker-compose.yml
+docker-compose.dev.yml
+deployment/docker/docker-compose.yml
+deployment/docker/docker-compose.dev.yml
+
+# Task definitions (have secrets and endpoints)
+*task*.json
+backend-task-fixed.json
+backend-task-new.json
+backend-task-ssl.json
+backend-task-temp.json
+backend-task.json
+celery-task-fixed.json
+celery-task-new.json
+celery-task-ssl.json
+frontend-task-new.json
+deployment/ecs/task-definition-backend.json
+deployment/ecs/task-definition-frontend.json
+deployment/ecs/task-definition-worker.json
+
+# Test files
+test_analysis.py
+backend/test_analysis.py
+
+# Alembic
+alembic.ini
+backend/alembic.ini
+
+# Dockerignore
+.dockerignore
+backend/.dockerignore
